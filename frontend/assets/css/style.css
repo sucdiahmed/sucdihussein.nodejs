@@ -1,0 +1,208 @@
+/* Modern Color Scheme */
+:root {
+    --primary-color: #4F46E5;      /* Indigo */
+    --secondary-color: #3B82F6;    /* Blue */
+    --accent-color: #8B5CF6;       /* Purple */
+    --success-color: #10B981;      /* Emerald */
+    --warning-color: #F59E0B;      /* Amber */
+    --danger-color: #EF4444;       /* Red */
+    --dark-color: #1F2937;         /* Gray 800 */
+    --light-color: #F3F4F6;        /* Gray 100 */
+}
+
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--light-color);
+}
+
+/* Enhanced Navigation */
+.navbar {
+    padding: 1rem 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white !important;
+}
+
+.navbar-brand i {
+    font-size: 1.25rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9) !important;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: white !important;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.nav-link.active {
+    color: white !important;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.nav-link i {
+    font-size: 1.1rem;
+}
+
+/* Auth Buttons */
+.auth-buttons .btn {
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 4rem 0 2rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+    padding-left: 0.5rem;
+}
+
+.footer-social a {
+    color: white;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.btn {
+    border-radius: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    border: none;
+}
+
+/* Search Section */
+.search-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    padding: 4rem 0;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.search-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Form Controls */
+.form-control {
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--light-color);
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+    border-color: var(--primary-color);
+}
+
+/* Status Badges */
+.badge {
+    padding: 0.5rem 0.75rem;
+    font-weight: 500;
+}
+
+.badge-active {
+    background-color: var(--success-color);
+}
+
+.badge-inactive {
+    background-color: var(--warning-color);
+}
+
+/* Soft background colors for job cards */
+.bg-soft-primary {
+    background-color: rgba(37, 99, 235, 0.1) !important;
+}
+
+.bg-soft-success {
+    background-color: rgba(16, 185, 129, 0.1) !important;
+}
+
+.bg-soft-warning {
+    background-color: rgba(245, 158, 11, 0.1) !important;
+}
+
+.bg-soft-info {
+    background-color: rgba(96, 165, 250, 0.1) !important;
+}
+
+/* Hover effect for job cards */
+.card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Improve card text contrast */
+.card-title {
+    color: var(--dark-color) !important;
+}
+
+.card-subtitle {
+    color: var(--secondary-color) !important;
+}
+
+/* Badge styles */
+.badge {
+    padding: 0.5em 1em;
+    font-weight: 500;
+} 

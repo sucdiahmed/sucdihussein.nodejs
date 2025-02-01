@@ -1,0 +1,38 @@
+mkdir job-finder
+cd job-finder
+mkdir frontend backend
+cd backend
+npm init -y 
+mkdir frontend/pages frontend/assets frontend/assets/css frontend/assets/js
+mkdir backend/models backend/controllers backend/routes backend/middleware backend/config 
+cd backend
+npm install express mongoose dotenv cors bcryptjs jsonwebtoken multer
+npm install nodemon --save-dev 
+cd backend
+npm run dev 
+npm install -g http-server 
+cd frontend
+http-server -p 8080 
+cd backend
+node scripts/create-admin.js 
+mkdir -p uploads/company-logos 
+cd backend/uploads/company-logos
+touch .gitkeep 
+# Navigate to your project root (where backend and frontend folders are)
+cd C:\Users\taaji\OneDrive\Documents\Semester 7\2ndTerm\Node\Job_Finder
+
+# Create uploads directory in backend
+cd backend
+mkdir uploads
+cd uploads
+mkdir company-logos
+
+# Go back to project root
+cd .. 
+cd backend
+node scripts/test-uploads.js 
+
+# On Windows (run PowerShell as Administrator)
+$acl = Get-Acl "C:\Users\taaji\OneDrive\Documents\Semester 7\2ndTerm\Node\Job_Finder\backend\uploads"
+$acl.SetAccessRuleProtection($false, $true)
+Set-Acl "C:\Users\taaji\OneDrive\Documents\Semester 7\2ndTerm\Node\Job_Finder\backend\uploads" $acl 

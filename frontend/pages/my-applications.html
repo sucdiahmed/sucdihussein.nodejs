@@ -1,0 +1,7 @@
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        if (!auth.checkJobSeekerAccess()) {
+            return; // This will redirect to error page
+        }
+    });
+</script> 

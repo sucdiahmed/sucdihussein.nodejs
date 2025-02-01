@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Finder - Find Your Dream Job</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-briefcase me-2"></i>Job Finder
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            <i class="bi bi-house me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="find-jobs.html">
+                            <i class="bi bi-search me-1"></i>Find Jobs
+                        </a>
+                    </li>
+                    <li class="nav-item job-poster-only" style="display: none;">
+                        <a class="nav-link" href="post-job.html">
+                            <i class="bi bi-plus-circle me-1"></i>Post Job
+                        </a>
+                    </li>
+                    <li class="nav-item admin-only" style="display: none;">
+                        <a class="nav-link" href="admin/dashboard.html">
+                            <i class="bi bi-speedometer2 me-1"></i>Admin
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            <i class="bi bi-info-circle me-1"></i>About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="bi bi-envelope me-1"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center" id="authButtons">
+                    <!-- Auth buttons will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section text-center py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">
+                        <i class="bi bi-search-heart me-2"></i>Find Your Dream Job Today
+                    </h1>
+                    <p class="lead mb-5">
+                        <i class="bi bi-stars me-2"></i>Connect with top employers and discover opportunities that match your skills and aspirations.
+                    </p>
+                    <div class="search-container bg-white p-3 rounded-pill shadow-lg">
+                        <form class="d-flex gap-2">
+                            <div class="input-group">
+                                <span class="input-group-text bg-transparent border-0">
+                                    <i class="bi bi-search"></i>
+                                </span>
+                                <input type="text" class="form-control border-0" placeholder="Search jobs...">
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-text bg-transparent border-0">
+                                    <i class="bi bi-grid"></i>
+                                </span>
+                                <select class="form-select border-0 w-auto">
+                                    <option value="">All Categories</option>
+                                    <option><i class="bi bi-laptop"></i> Technology</option>
+                                    <option><i class="bi bi-megaphone"></i> Marketing</option>
+                                    <option><i class="bi bi-palette"></i> Design</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-primary px-4">
+                                <i class="bi bi-search me-2"></i>Search
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">
+                <i class="bi bi-star-fill text-warning me-2"></i>Featured Jobs
+            </h2>
+            <div class="row">
+                <!-- Job Cards will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">
+                <i class="bi bi-grid-3x3-gap me-2"></i>Popular Categories
+            </h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="category-card text-center p-4 bg-white rounded shadow-sm">
+                        <i class="bi bi-laptop fs-1 text-primary mb-3"></i>
+                        <h5>Technology</h5>
+                        <p class="text-muted"><i class="bi bi-briefcase me-2"></i>1,234 jobs</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-card text-center p-4 bg-white rounded shadow-sm">
+                        <i class="bi bi-megaphone fs-1 text-success mb-3"></i>
+                        <h5>Marketing</h5>
+                        <p class="text-muted"><i class="bi bi-briefcase me-2"></i>856 jobs</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-card text-center p-4 bg-white rounded shadow-sm">
+                        <i class="bi bi-palette fs-1 text-info mb-3"></i>
+                        <h5>Design</h5>
+                        <p class="text-muted"><i class="bi bi-briefcase me-2"></i>623 jobs</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-card text-center p-4 bg-white rounded shadow-sm">
+                        <i class="bi bi-bank fs-1 text-warning mb-3"></i>
+                        <h5>Finance</h5>
+                        <p class="text-muted"><i class="bi bi-briefcase me-2"></i>945 jobs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">
+                <i class="bi bi-gear me-2"></i>How It Works
+            </h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="circle-icon mb-3">
+                            <i class="bi bi-person-plus fs-1 text-primary"></i>
+                        </div>
+                        <h4><i class="bi bi-1-circle me-2"></i>Create Account</h4>
+                        <p>Sign up and complete your profile</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="circle-icon mb-3">
+                            <i class="bi bi-search fs-1 text-success"></i>
+                        </div>
+                        <h4><i class="bi bi-2-circle me-2"></i>Search Jobs</h4>
+                        <p>Browse and find your perfect job</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="circle-icon mb-3">
+                            <i class="bi bi-send fs-1 text-info"></i>
+                        </div>
+                        <h4><i class="bi bi-3-circle me-2"></i>Apply</h4>
+                        <p>Submit your application</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5><i class="bi bi-briefcase me-2"></i>Job Finder</h5>
+                    <p><i class="bi bi-quote me-2"></i>Connecting talent with opportunities</p>
+                    <div class="footer-social mt-4">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h5><i class="bi bi-link-45deg me-2"></i>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><i class="bi bi-chevron-right me-2"></i><a href="find-jobs.html">Find Jobs</a></li>
+                        <li><i class="bi bi-chevron-right me-2"></i><a href="post-job.html">Post Job</a></li>
+                        <li><i class="bi bi-chevron-right me-2"></i><a href="about.html">About</a></li>
+                        <li><i class="bi bi-chevron-right me-2"></i><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5><i class="bi bi-person me-2"></i>For Job Seekers</h5>
+                    <ul class="footer-links">
+                        <li><i class="bi bi-chevron-right me-2"></i><a href="#">Create Account</a></li>
+                        <li><i class="bi bi-chevron-right me-2"></i><a href="#">Browse Jobs</a></li>
+                        <li><i class="bi bi-chevron-right me-2"></i><a href="#">My Applications</a></li>
+                        <li><i class="bi bi-chevron-right me-2"></i><a href="#">Career Tips</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5><i class="bi bi-envelope me-2"></i>Contact Us</h5>
+                    <ul class="footer-links">
+                        <li><i class="bi bi-telephone me-2"></i>(123) 456-7890</li>
+                        <li><i class="bi bi-envelope me-2"></i>info@jobfinder.com</li>
+                        <li><i class="bi bi-geo-alt me-2"></i>123 Street, City, Country</li>
+                        <li><i class="bi bi-clock me-2"></i>Mon - Fri: 9:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0"><i class="bi bi-c-circle me-2"></i>2024 Job Finder. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white-50 me-3"><i class="bi bi-shield-check me-1"></i>Privacy Policy</a>
+                    <a href="#" class="text-white-50"><i class="bi bi-file-text me-1"></i>Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/auth.js"></script>
+</body>
+</html> 
